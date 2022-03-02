@@ -1,10 +1,18 @@
+
+:root {
+  --sat: env(safe-area-inset-top);
+  --sar: env(safe-area-inset-right);
+  --sab: env(safe-area-inset-bottom);
+  --sal: env(safe-area-inset-left);
+}
+
 html, body {
   margin: 0;
   padding: 0;
 }
 body {
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: black;
   position: relative;
 }
@@ -12,7 +20,7 @@ body {
 .container {
   display: flex;
   align-items: center !important;
-  height: 100vh;
+  height: calc(100vh - var(--sab));
   justify-content: center;
 }
 
