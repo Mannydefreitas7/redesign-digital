@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/upwork-19335613/big-cash-upwork/build/static/css/main.75c12d84.css",
-    "main.js": "/upwork-19335613/big-cash-upwork/build/static/js/main.23c7f796.js",
+    "main.css": "/upwork-19335613/big-cash-upwork/build/static/css/main.b257cece.css",
+    "main.js": "/upwork-19335613/big-cash-upwork/build/static/js/main.5d229c41.js",
     "static/media/card_after_4.png": "/upwork-19335613/big-cash-upwork/build/static/media/card_after_4.780bf4cf75d2511573df.png",
     "index.html": "/upwork-19335613/big-cash-upwork/build/index.html",
-    "main.75c12d84.css.map": "/upwork-19335613/big-cash-upwork/build/static/css/main.75c12d84.css.map",
-    "main.23c7f796.js.map": "/upwork-19335613/big-cash-upwork/build/static/js/main.23c7f796.js.map"
+    "main.b257cece.css.map": "/upwork-19335613/big-cash-upwork/build/static/css/main.b257cece.css.map",
+    "main.5d229c41.js.map": "/upwork-19335613/big-cash-upwork/build/static/js/main.5d229c41.js.map"
   },
   "entrypoints": [
-    "static/css/main.75c12d84.css",
-    "static/js/main.23c7f796.js"
+    "static/css/main.b257cece.css",
+    "static/js/main.5d229c41.js"
   ]
 }

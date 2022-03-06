@@ -86,10 +86,18 @@
         "winnings": [86,21,68,35],
         "scratched": [],
         "image": {
+            "winning": {
+                "size": {
+                    "height": 40,
+                    "width": 200
+                },
+                "src": "winning-scratch.png",
+                "color": "yellow"
+            },
             "foreground": {
                 "size": {
                     "height": 65,
-                    "width": 60
+                    "width": 50
                 },
                 "src": "scratch.png",
                 "color": "yellow"

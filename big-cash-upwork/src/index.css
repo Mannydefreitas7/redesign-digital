@@ -38,27 +38,44 @@ body {
   cursor: pointer;
 }
 
+.scratch {
+    position: absolute;
+    z-index: 10;
+    margin-top: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scratch .grid {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-row-gap: 10px;
+  min-width: 260px;
+}
+
+.scratch .winning-area {
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.number-box .card {
+  display: block;
+  margin: auto;
+}
+
 .scratch-area {
   position: absolute;
   z-index: 10;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 60%;
   margin-top: 30%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   grid-gap: 5px;
-}
-
-.winning-area {
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-  margin-top: -70px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .number-box {
@@ -90,16 +107,17 @@ body {
 }
 
 .number {
-  font-size: 2em;
+  font-size: 1.7em;
   line-height: 0.9;
   color: rgb(222, 159, 0);
   -webkit-text-stroke: 2.5px black;
   font-family: 'Titillium Web', sans-serif;
 }
 
-.number.scratched {
-  color: green;
+.number.winning {
+  margin: 0 5px;
 }
+
 
 @media only screen and (min-width: 420px) {
   #ticket .cover {

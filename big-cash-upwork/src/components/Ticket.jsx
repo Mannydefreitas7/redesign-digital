@@ -4,11 +4,31 @@ import ScratchCard from './../js/ScratchCard';
 function Ticket({ ticket }) {
 
     const [data, setData] = useState(ticket)
+    const winningSettings = {
+        width: ticket.image.winning.size.width,
+        height: ticket.image.winning.size.height,
+        image: './images/' + ticket.image.winning.src,
+        finishPercent: 60,
+        onComplete: () => {
+            console.log('test')
+        }
+    }
 
+    console.log(ticket)
     return (
         <div id="ticket">
-            <div className='winning-area'>Winning Numbers</div>
-            <div className='scratch-area'>
+           
+            <div className='scratch'>
+                <div className="winning-area">
+                <ScratchCard {...winningSettings}>
+                        {
+                            data.winnings.map(number => {
+                                return <span key={number} className={`number winning`} style={{ color:ticket.image.foreground.color  }}>{number}</span>
+                            })
+                        }
+                </ScratchCard>
+                </div>
+                <div className="grid">
                 {
                     data.numbers.map(item => {
                         const settings = {
@@ -35,6 +55,7 @@ function Ticket({ ticket }) {
                         )
                     })
                 }
+                </div>
             </div>
             <img className='cover' src={'./images/' + ticket.image.background.src} />
         </div>
