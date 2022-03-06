@@ -80,7 +80,7 @@ class ScratchCard extends Component {
       return;
     }
 
-    e.preventDefault();
+   // e.preventDefault();
 
     const currentPoint = this.getMouse(e, this.canvas);
     const distance = this.distanceBetween(this.lastPoint, currentPoint);
@@ -115,7 +115,8 @@ class ScratchCard extends Component {
       WebkitUserSelect: 'none',
       MozUserSelect: 'none',
       msUserSelect: 'none',
-      userSelect: 'none'
+      userSelect: 'none',
+      touchAction: 'none'
     }
 
     const canvasStyle = {
