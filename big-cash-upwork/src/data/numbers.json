@@ -1,22 +1,105 @@
 [
     {
         "id": 1,
-        "numbers": [86,21,68,35,7,9,15,12,69,78,51,17,98,6,16,44,52,90,48,77],
+        "numbers": [
+            {
+                "number": 9,
+                "score": 100
+            },
+            {
+                "number": 95,
+                "score": 20
+            },
+            {
+                "number": 42,
+                "score": 250
+            },
+            {
+                "number": 34,
+                "score": 100
+            },
+            {
+                "number": 72,
+                "score": 800
+            },
+            {
+                "number": 93,
+                "score": 800
+            },
+            {
+                "number": 86,
+                "score": 800
+            },
+            {
+                "number": 20,
+                "score": 800
+            },
+            {
+                "number": 10,
+                "score": 800
+            },
+            {
+                "number": 73,
+                "score": 800
+            },
+            {
+                "number": 91,
+                "score": 800
+            },
+            {
+                "number": 97,
+                "score": 800
+            },
+            {
+                "number": 25,
+                "score": 800
+            },
+            {
+                "number": 33,
+                "score": 800
+            },
+            {
+                "number": 39,
+                "score": 800
+            },
+            {
+                "number": 21,
+                "score": 800
+            },
+            {
+                "number": 8,
+                "score": 800
+            },
+            {
+                "number": 57,
+                "score": 800
+            },
+            {
+                "number": 4,
+                "score": 800
+            },
+            {
+                "number": 74,
+                "score": 800
+            }
+        ],
         "winnings": [86,21,68,35],
         "scratched": [],
         "image": {
-            "box": "scratch.png",
-            "background": "card_after_4.png"
-        }
-    },
-    {
-        "id": 2,
-        "numbers": [9,95,42,34,72,92,1,2,24,97,99,36,20,89,60,86,11,65,48,26],
-        "winnings": [2,24,97,99,36],
-        "scratched": [],
-        "image": {
-            "box": "scratch.png",
-            "background": "card_after_4.png"
+            "foreground": {
+                "size": {
+                    "height": 65,
+                    "width": 60
+                },
+                "src": "scratch.png",
+                "color": "yellow"
+            },
+            "background": {
+                "size": {
+                    "height": 300
+                },
+                "src": "card_after_4.png"
+            }
         }
     }
 ]
