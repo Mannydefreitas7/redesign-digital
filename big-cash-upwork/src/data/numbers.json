@@ -95,11 +95,7 @@
                 "color": "yellow"
             },
             "foreground": {
-                "size": {
-                    "height": 65,
-                    "width": 50
-                },
-                "src": "scratch.png",
+                "src": "card_before_4.png",
                 "color": "yellow"
             },
             "background": {

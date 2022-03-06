@@ -13,9 +13,11 @@ class ScratchCard extends Component {
     this.ctx = this.canvas.getContext('2d');
 
     const image = new Image();
+    this.ctx.canvas.width = this.props.width
+    this.ctx.canvas.height = this.props.height
     image.crossOrigin = "Anonymous";
     image.onload = () => {
-      this.ctx.drawImage(image, this.props.width / 2 - image.width / 2, this.props.height / 2 - image.height / 2);
+      this.ctx.drawImage(image, 0, 0, this.props.width, this.props.height);
       this.setState({ loaded: true });
     }
     image.src = this.props.image;
@@ -111,7 +113,7 @@ class ScratchCard extends Component {
     const containerStyle = {
       width: this.props.width + 'px',
       height: this.props.height + 'px',
-      position: 'relative',
+      position: 'absolute',
       WebkitUserSelect: 'none',
       MozUserSelect: 'none',
       msUserSelect: 'none',
@@ -131,7 +133,7 @@ class ScratchCard extends Component {
 
     const canvasProps = {
       ref: (ref) => this.canvas = ref,
-      className: 'ScratchCard__Canvas',
+      className: this.props.className,
       style: canvasStyle,
       width: this.props.width,
       height: this.props.height,
