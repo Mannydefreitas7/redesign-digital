@@ -18,3 +18,5 @@
 /big-cash-upwork/npm-debug.log*
 /big-cash-upwork/yarn-debug.log*
 /big-cash-upwork/yarn-error.log*
+
+.DS_Store
